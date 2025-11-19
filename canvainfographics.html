@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+        }
+
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            padding: 12px 35px;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            z-index: 10;
+        }
+
+        .navbar li {
+            list-style: none;
+            margin: 0 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #333;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #ff5e62;
+        }
+
+        /* Banner */
+        .project-banner {
+            width: 100%;
+            height: 330px;
+            background-image: url('project-banner.jpg'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            border-bottom: 5px solid #fff;
+        }
+
+        /* Content */
+        .project-container {
+            max-width: 900px;
+            background: white;
+            padding: 40px;
+            margin: 50px auto;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .project-container h1 {
+            color: #0d6750;
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+        }
+
+        .description {
+            color: #444;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            color: #0d6750;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #10efb2;
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0bbf8a;
+        }
+
+         .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #10efb2;
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0bbf8a;
+        }
+
+    </style>
+</head>
+<body>
+
+    
+    <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about me.html">About</a></li>
+        <li><a href="Projects.html">Project</a></li>
+        <li><a href="Contacts.html">Contact</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="skills.html">Skills</a></li>
+    </ul>
+
+    <
+    <div class="project-banner"></div>
+
+    
+    <div class="project-container">
+
+        <h1>Canva Project</h1>
+
+        <p class="description">
+            This project is for infographic design, it is a visual representation of information, data, or knowledge designed to present complex information quickly and clearly. To show you that I can make infographic more easy to understand and not so boring.
+            <br><br>
+            The goal of this project is to create a infographic can be undertandable and aesthetic.
+
+        <h2 class="section-title">✨ Key Features</h2>
+        <ul>
+            <li>Data Visualization.</li>
+            <li>Well-researched data.</li>
+            <li>Customizable Elements</li>
+            <li>Capturing Attention</li>
+            <li>Clean and minimalistic design approach.</li>
+            <li>Relevant Imagery</li>
+        </ul>
+
+        <h2 class="section-title">🛠 Technologies Used</h2>
+        <ul>
+            <li>Canva – for the design</li>
+        </ul>
+
+        <h2 class="section-title">📸 Project Image</h2>
+        <div class="gallery">
+            <img src="canva info.jpg" alt="Project Image 1">
+           
+        </div>
+
+        <a href="https://www.canva.com/design/DAGwbeZ0LvA/-jBF29U3xBxZZuAPJzWt9A/view?utm_content=DAGwbeZ0LvA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4c8416a084" class="btn">View Live Project</a>
+
+    </div>
+
+</body>
+</html>

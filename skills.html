@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills and Interest</title>
+
+    <style>
+
+    .navbar {
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(10px);
+        padding: 12px 35px;
+        border-radius: 50px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+
+    .navbar li {
+        list-style: none;
+        margin: 0 20px;
+        font-weight: 600;
+        color: #333;
+        position: relative;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .navbar li::after {
+        content: '';
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        background: #ff5e62;
+        border-radius: 2px;
+        transition: width 0.3s ease;
+    }
+
+    .navbar li:hover::after {
+        width: 100%;
+    }
+
+    .navbar li:hover {
+        color: #ff5e62;
+        transform: translateY(-3px);
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", Arial, sans-serif;
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    
+    .container {
+      background-color: white;
+      border-radius: 25px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      padding: 40px;
+      max-width: 600px;
+      text-align: center;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 20px;
+      border: 5px solid #a8edea;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .profile-pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    
+    h1 {
+      color: #333;
+      font-size: 2em;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #444;
+      line-height: 1.6;
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #10efb2;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #0ebf8e;
+      transform: scale(1.05);
+    }
+
+    .skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 25px;
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.skills-grid li {
+  font-size: 16px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  background: #f7f7f7;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.skills-grid li:hover {
+  transform: translateY(-3px);
+  background: #e0f7ff;
+}
+
+.skill-icon {
+  font-size: 20px;
+}
+
+ .navbar {
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(10px);
+        padding: 12px 35px;
+        border-radius: 50px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+
+    .navbar li {
+        list-style: none;
+        margin: 0 20px;
+        font-weight: 600;
+        color: #333;
+        position: relative;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .navbar li::after {
+        content: '';
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        background: #ff5e62;
+        border-radius: 2px;
+        transition: width 0.3s ease;
+    }
+
+    .navbar li:hover::after {
+        width: 100%;
+    }
+
+    .navbar li:hover {
+        color: #ff5e62;
+        transform: translateY(-3px);
+    }
+  </style>
+    </head>
+
+    <body>
+
+         <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about me.html">About</a></li>
+        <li><a href="Projects.html">Project</a></li>
+        <li><a href="Contacts.html">Contact</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        </ul>
+
+        <div class="container">
+    <div class="profile-pic">
+      <img src="Picture Seth.jpg" alt="Seth Jimenez">
+    </div>
+
+        <h1>Skills</h1>
+        <ul class="skills-grid">
+    <li><span class="skill-icon">💻</span> Coding</li>
+    <li><span class="skill-icon">🗣️</span> Communication</li>
+    <li><span class="skill-icon">🎨</span> Creativity</li>
+    <li><span class="skill-icon">🧩</span> Problem Solving</li>
+    <li><span class="skill-icon">📊</span> Data Analysis</li>
+    <li><span class="skill-icon">🤝</span> Collaboration</li>
+    <li><span class="skill-icon">⏰</span> Time Management</li>
+    <li><span class="skill-icon">🔧</span> Adaptability</li>
+    <li><span class="skill-icon">⭐</span> Leadership</li>
+    <li><span class="skill-icon">🔍</span> Attention to Detail</li>
+</ul>
+        
+    </body>
+    
+</html>

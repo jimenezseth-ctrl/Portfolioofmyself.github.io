@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <style>
+    .navbar {
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(10px);
+        padding: 12px 35px;
+        border-radius: 50px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+
+    .navbar li {
+        list-style: none;
+        margin: 0 20px;
+        font-weight: 600;
+        color: #333;
+        position: relative;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .navbar li::after {
+        content: '';
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        background: #ff5e62;
+        border-radius: 2px;
+        transition: width 0.3s ease;
+    }
+
+    .navbar li:hover::after {
+        width: 100%;
+    }
+
+    .navbar li:hover {
+        color: #ff5e62;
+        transform: translateY(-3px);
+    }
+    body {
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .input-group {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.input-group label {
+  font-weight: bold;
+  color: #0d6750;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #10efb2;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #0bbf8a;
+  box-shadow: 0 0 8px rgba(16, 239, 178, 0.5);
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+.send-btn {
+  width: 100%;
+  padding: 12px;
+  background: #10efb2;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.send-btn:hover {
+  background: #0bbf8a;
+  transform: scale(1.03);
+}
+  </style>
+</head>
+<body>
+
+  <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about me.html">About</a></li>
+        <li><a href="Projects.html">Project</a></li>
+        <li><a href="Contacts.html">Contact</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="skills.html">Skills</a></li>
+    </ul>
+
+
+  <div class="contact-card">
+
+  <h1>Contact Me</h1>
+
+  <form>
+    
+    <div class="input-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="Enter your name" required>
+    </div>
+
+    <div class="input-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="input-group">
+      <label for="message">Message</label>
+      <textarea id="message" placeholder="Write your message..." required></textarea>
+    </div>
+
+    <button type="submit" class="send-btn">Send Message</button>
+
+  </form>
+
+</div>
+
+</body>
+</html>
